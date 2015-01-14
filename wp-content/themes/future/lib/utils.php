@@ -538,7 +538,7 @@ $future_copyright_code = __( '&copy; Copyright', 'future' ) . date( ' Y ' ) . ' 
         <?php if ( ! dynamic_sidebar( 'future-footer-tail-sidebar' ) ): ?>
 	    <section class="widget widget_text">
 	      <div class="widget-inside">	        
-	        <div class="textwidget"><?php echo $future_copyright_code; ?></div>
+	        <div class="textwidget">Arbeitskreis Elektronisches Publizieren im B&ouml;rsenverein des Deutschen Buchhandels e.V.</div>
 	      </div>
 	    </section>
 	    <?php endif; ?>
@@ -548,7 +548,7 @@ $future_copyright_code = __( '&copy; Copyright', 'future' ) . date( ' Y ' ) . ' 
 	    <section class="widget widget_text">
 	      <div class="widget-inside">	        
 	        <div class="textwidget theme-info">
-	          <a href="<?php echo $future_theme_data['ThemeURI']; ?>" title="Future Theme">Future Theme</a> &sdot; <?php _e( 'Powered by', 'future' ); ?> <a href="http://wordpress.org/" title="WordPress">WordPress</a>
+<!-- -->
 	        </div>
 	      </div>
 	    </section>

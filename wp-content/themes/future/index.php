@@ -9,11 +9,11 @@
       <div class="<?php future_cs_layout( array( 'cs_layout_bone' => 'content_column_class' ) ); ?>">
         <main class="content" role="main" itemprop="mainContentOfPage" itemscope="itemscope" itemtype="http://schema.org/Blog">	  
   	  
-  	      <?php if ( have_posts() ) : ?>
-        
-            <?php while ( have_posts() ) : the_post(); ?>
-          
-              <?php get_template_part( 'content', get_post_format() ); ?>
+  	    
+  	     <?php query_posts('cat=140&showposts=5'); ?>
+			<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+  			    <?php get_template_part( 'content', get_post_format() ); ?>
+                  
           
             <?php endwhile; ?>
         
